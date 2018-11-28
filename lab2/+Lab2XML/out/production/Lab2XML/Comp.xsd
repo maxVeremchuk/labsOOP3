@@ -1,0 +1,47 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <!-- XML Schema Generated from XML Document on Fri Oct 05 2018 20:12:58 GMT+0300 (за східноєвропейським літнім часом) -->
+  <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+  <xs:element name="Devise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Component" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string"></xs:element>
+              <xs:element name="Origin" type="xs:string"></xs:element>
+              <xs:element name="Prise" type="xs:float"></xs:element>
+              <xs:element name="Type">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EneryCons">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value="0"/>
+                          <xs:maxInclusive value="1000"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Cooler" type="xs:string"></xs:element>
+                    <xs:element name="Group">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="IO"/>
+                          <xs:enumeration value="Mult"/>
+                          <xs:enumeration value="Other"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Port" type="xs:string"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Critical" type="xs:boolean"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string"></xs:attribute>
+            <xs:attribute name="id" type="xs:integer"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

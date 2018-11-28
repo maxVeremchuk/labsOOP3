@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Devise>
+	<Component name="mouse" id="1">
+		<Name>Xiaomi</Name>
+		<Origin>China</Origin>
+		<Prise>8.10</Prise>
+		<Type>
+			<EneryCons>1</EneryCons>
+			<Cooler>false</Cooler>
+			<Group>IO</Group>
+			<Port>USB</Port>
+		</Type>
+		<Critical>false</Critical>
+	</Component>
+	<Component name="monitor" id="2">
+		<Name>Dell</Name>
+		<Origin>USA</Origin>
+		<Prise>99.99</Prise>
+		<Type>
+			<EneryCons>10</EneryCons>
+			<Cooler>false</Cooler>
+			<Group>Mult</Group>
+			<Port>VGA</Port>
+		</Type>
+		<Critical>true</Critical>
+	</Component>
+	<Component name="processor" id="3">
+		<Name>Intel</Name>
+		<Origin>USA</Origin>
+		<Prise>199.99</Prise>
+		<Type>
+			<EneryCons>2</EneryCons>
+			<Cooler>true</Cooler>
+			<Group>Other</Group>
+			<Port>Other</Port>
+		</Type>
+		<Critical>true</Critical>
+	</Component>
+	<Component name="gamepad" id="4">
+		<Name>GP comp</Name>
+		<Origin>GB</Origin>
+		<Prise>15.45</Prise>
+		<Type>
+			<EneryCons>1</EneryCons>
+			<Cooler>false</Cooler>
+			<Group>IO</Group>
+			<Port>USB</Port>
+		</Type>
+		<Critical>false</Critical>
+	</Component>
+</Devise>
